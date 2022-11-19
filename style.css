@@ -2,6 +2,8 @@ html, body {
     margin: 0;
     padding: 0;
     font-size: 62.5%;
+        background: #F0F0F0;
+
 }
 
 body {
@@ -23,16 +25,20 @@ h2 {
     margin-bottom: 16px;
 }
 
+ul li {
+    list-style-type: none;
+    /* padding: ; */
+    margin: 0;
+}
+
 .openSans {
     font-family: 'Open Sans';
 }
-* {
-    /* border: 2px solid red; */
-}
+
 
 p, a, li {
     color: #2C2C2C;
-    font-family: var(--font-regular);
+    /* font-family: var(--font-regular); */
     font-size: 1.6rem;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -46,7 +52,8 @@ header {
     height: 85px;
     width: 100%;
     box-shadow: 0px 0px 10px black;
-    padding: 10px 0;
+    padding: 1rem 0;
+    background: white;
     position: sticky;
     /* display: grid;
     place-items: center; */
@@ -56,13 +63,14 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 1rem;
     /* background-color: green; */
 
 }
 
 .nav--btn {
     color: black;
-    padding: 15px;
+    padding: 10px;
     border-radius: 5px;
     background: #F0F0F0;
 }
@@ -77,7 +85,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(31, 31, 216);
+    color: #001F60;
     font-weight: 600;
 }
 .section--container {
@@ -285,4 +293,31 @@ main {
 }
 .mapwork img {
     width: 450px;
+}
+
+footer {
+    padding: 30px 0;
+}
+
+.footer {
+    background: #D7ECEE;
+}
+.footer--container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.toogleMenu {
+    text-align: left;
+    /* border: 2px solid red; */
+}
+
+.toogleMenu h4 {
+    font-size: 19px;
+    color: #3c3c3c;
+    /* font-family: var(--font-bold); */
+    padding-bottom: 10px;
+}
+.toogleMenu ul li {
+    margin-left: -20px;
 }
