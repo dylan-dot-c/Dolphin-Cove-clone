@@ -44,8 +44,11 @@ p, a, li {
 }
 a {
     text-decoration: none;
-    
+    color: black;
+}
 
+a h3 {
+    color: black;
 }
 
 header {
@@ -87,6 +90,7 @@ nav ul li {
 nav ul li a {
     color: #001F60;
     font-weight: 600;
+    /* font-size: 2rem; */
 }
 .section--container {
     max-width: 1100px;
@@ -94,6 +98,50 @@ nav ul li a {
     margin: 0 auto;
     
 
+}
+
+/* DROPDOWN STYEKLES */
+
+.habitats {
+    transition: .5s;
+    padding: 3rem 5px;
+}
+.habitats:hover  {
+    background: #CCEDF9;;
+}
+
+.dropdown--content {
+    /* FONT-VARIANT: JIS78; */
+    opacity: 0;
+    display: none;
+    transition: .4s;
+    position: absolute;
+    left: -100%;
+    margin-left: -875px;
+    width: 100vw;
+    background: white;
+}
+
+.dropdown--content img {
+    width: 184px;
+    height: 131px;
+}
+
+.dropdown--content h3 {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+.dropdown:hover .dropdown--content{
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 4rem;
+    align-items: center;
+    /* ; */
 }
 
 /* Hero */
